@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>booga awooga</title>
+</head>
+<body>
+    <script>
+      switch (prompt("What is the weather like?")) {
+        case "rainy":
+          console.log("rember to bring umbrela");
+          break;
+        case "sunny":
+          console.log("Dress lightly.");
+          // Fall through
+        case "cloudy":
+          console.log("Go outside.");
+          break;
+        default:
+          console.log("Unknown weather type!");
+          break;
+      }
+    </script>
+</body>
+</html>
