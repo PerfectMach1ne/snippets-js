@@ -233,4 +233,15 @@ function tableFor(event, journal) {
 console.log(tableFor("pizza", JOURNAL));
 console.log(tableFor("pizza", journal));
 
+// hello april from Cool Cellar Place at 16:31 of the 2nd April of this beautiful godless year 2023rd year
 
+for (let i = 0; i < JOURNAL.length; i++) {
+  let entry = JOURNAL[i];
+  // console.log(entry);
+}
+
+for (let entry of JOURNAL) {
+  console.log(`${entry.events.length} events.`);
+}
+
+// this ain't the time to code, i'll finish this next week (tomorrow)
