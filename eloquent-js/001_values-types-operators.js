@@ -77,10 +77,11 @@ console.log(true ? 1 : 2);
 console.log(false ? 1 : 2);
 // → 2
 
+console.log("------------ I");
 console.log(typeof null)
 console.log(typeof undefined)
 console.log(null + undefined) // Of course it's a NaN
-console.log(null + null) // ...0? bruh
+console.log(null + null) // ...0? bruh //16-02-24: lmao
 console.log(undefined + undefined) // NaN now
 console.log(0 + null) // 0
 console.log(null + 0) // 0
