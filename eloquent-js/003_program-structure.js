@@ -14,6 +14,8 @@ console.log($_324234stillalegalname342324$$$__);
 
 console.log(Math.max(-69,57));
 console.log(Math.min(0, 2, 4) + 100);
+console.log("lolol" + (Math.min(-5, 0, 5) + 62));
+console.log("lolol" + Math.min(-5, 0, 5) + 62);
 let theNumber = 3;
 // of course this doesn't work as a raw file ran by node.js
 // To see it in action, open 004_prompt.html in the browser which is basically just this code
@@ -77,3 +79,5 @@ for (let counter = 0; counter < 10; counter += 1) {
   result = result + 1;
 }
 console.log(result); // 8 because adding 1 is skippsed when counter is 5 or 2
+
+const defined = undefined;
