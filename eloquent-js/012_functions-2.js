@@ -25,6 +25,15 @@ console.log(power(4,3));
 console.log(power(2,6));
 console.log("C", "O", 2);
 
+function beh() {
+  let beh = "bread"
+  {
+    var bread = "123"
+  }
+  console.log(beh + bread);
+}
+
+beh()
 
 ////////////////////////////
 // CLOSURE
