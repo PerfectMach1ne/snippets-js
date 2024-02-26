@@ -67,6 +67,28 @@ const hummus = function(factor) {
   ingredient(0.5, "teaspoon", "cumin");
 };
 
+// Arrow functions
+const power2 = (base, exponent) => {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+}
+
+console.log("============================");
+console.log(power2(3,4));
+
+const square1 = (x) => { return x * x; };
+const square2 = x => x * x;
+const toot = () => {
+  console.log("doot!!!");
+}
+console.log(square1(5));
+console.log(square2(5));
+console.log(toot());
+toot();
+
 ////////////////////////////
 // CLOSURE
 ////////////////////////////
@@ -75,6 +97,7 @@ function wrapValue(n) {
   return () => local;
 }
 
+console.log("test");
 let wrap1 = wrapValue(1);
 let wrap2 = wrapValue(2);
 console.log(wrap1());
@@ -207,4 +230,5 @@ let h = a => a % 3;
 
 f(5);
 console.log(g(3,2.5));
+
 console.log(h(7));
