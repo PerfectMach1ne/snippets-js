@@ -14,3 +14,5 @@ console.log(isEven(1));
 console.log(isEven(-1));
 console.log(isEven(57));
 console.log(isEven(69 - 1));
+console.log(50);
+console.log(75);

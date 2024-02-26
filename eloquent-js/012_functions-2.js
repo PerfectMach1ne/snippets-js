@@ -89,6 +89,25 @@ console.log(square2(5));
 console.log(toot());
 toot();
 
+function minus(a, b) {
+  if (b === undefined) return -a;
+  else return a - b;
+}
+
+console.log(minus(3));
+console.log(minus(4,3));
+
+function power(base, exponent = 2) {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+}
+
+console.log(power(3));
+console.log(power(3,3));
+
 ////////////////////////////
 // CLOSURE
 ////////////////////////////
@@ -100,6 +119,8 @@ function wrapValue(n) {
 console.log("test");
 let wrap1 = wrapValue(1);
 let wrap2 = wrapValue(2);
+console.log(wrap1());
+console.log(wrap2());
 console.log(wrap1());
 console.log(wrap2());
 /* This situation is a good demonstration of the fact that local
@@ -126,6 +147,7 @@ console.log(gayandfunny(1.5));
 ////////////////////////////
 // RECURSION
 ////////////////////////////
+console.log("hereeeeeeeeeeeeeeeeeeeeeeeeeeee");
 function rpower(base, exponent) {
   if (exponent == 0) {
     return 1;
@@ -171,35 +193,38 @@ console.log(findSolution(999));
 console.log(findSolution(777));
 
 //////////////////////////////
+{
+  function printFarmInventory(cows, chickens) {
+    let cowString = String(cows);
+    while (cowString.length < 3) {
+      cowString = '0' + cowString;
+    }
+    console.log(`${cowString} Cows`);
 
-function printFarmInventory(cows, chickens) {
-  let cowString = String(cows);
-  while (cowString.length < 3) {
-    cowString = '0' + cowString;
+    let chickenString = String(chickens);
+    while (chickenString.length < 3) {
+      chickenString = "0" + chickenString;
+    }
+    console.log(`${chickenString} Chickens`);
   }
-  console.log(`${cowString} Cows`);
+  printFarmInventory(7, 11);
+}
 
-  let chickenString = String(chickens);
-  while (chickenString.length < 3) {
-    chickenString = "0" + chickenString;
+{
+  function printZeroPaddedWithLabel(number, label) {
+    let numberString = String(number);
+    while (numberString.length < 3) {
+      numberString = "0" + numberString;
+    }
+    console.log(`${numberString} ${label}`);
   }
-  console.log(`${chickenString} Chickens`);
-}
-printFarmInventory(7, 11);
-
-function printZeroPaddedWithLabel(number, label) {
-  let numberString = String(number);
-  while (numberString.length < 3) {
-    numberString = "0" + numberString;
+  function printFarmInventory(cows, chickens, pigs) {
+    printZeroPaddedWithLabel(cows, "Cows");
+    printZeroPaddedWithLabel(chickens, "Chickens");
+    printZeroPaddedWithLabel(pigs, "Pigs");
   }
-  console.log(`${numberString} ${label}`);
+  printFarmInventory(7, 11, 333);
 }
-function printFarmInventory(cows, chickens, pigs) {
-  printZeroPaddedWithLabel(cows, "Cows");
-  printZeroPaddedWithLabel(chickens, "Chickens");
-  printZeroPaddedWithLabel(pigs, "Pigs");
-}
-printFarmInventory(7, 11, 333);
 
 function zeroPad(number, width) {
   let string = String(number);
