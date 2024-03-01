@@ -15,8 +15,8 @@ console.log(typeof doh.toUpperCase);
 console.log(doh.toUpperCase());
 
 let sequence = [5, 7, 4, 9];
-sequence.push(1);
-sequence.push(57);
+console.log(sequence.push(1));
+console.log(sequence.push(57));
 console.log(sequence);
 console.log(sequence.pop())
 console.log(sequence);
@@ -77,8 +77,11 @@ let object1 = {value: 10};
 let object2 = object1;
 let object3 = {value: 10};
 
+console.log("==========================");
 console.log(object1 == object2);
 console.log(object1 == object3);
+console.log(object1 === object2);
+console.log(object1 === object3);
 
 object1.value = 15;
 console.log(object2.value);
@@ -230,6 +233,7 @@ function tableFor(event, journal) {
   return table;
 }
 
+console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
 console.log(tableFor("pizza", JOURNAL));
 console.log(tableFor("pizza", journal));
 
@@ -297,6 +301,7 @@ console.log(phi(tableFor("peanut teeth", JOURNAL)))
 
 let todoList = [];
 
+console.log("wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww");
 // add task to the end of the queue
 function remember(task) {
   todoList.push(task);
