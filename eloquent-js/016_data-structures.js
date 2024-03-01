@@ -335,6 +335,10 @@ function remove(array, index) {
     .concat(array.slice(index + 1));
 }
 
+let arr_ = [1,6,2,6,2,7,31,8,9,123,56];
+console.log(arr_);
+console.log(remove(arr_, 5)); // removes 7!!! (index 5)
+
 // If you pass concat an argument that is not an array,
 // that value will be added to the new array as if it 
 // were a one-element array.
