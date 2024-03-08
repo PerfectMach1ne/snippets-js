@@ -386,7 +386,7 @@ console.log(string[1]);
 ///////////////////////////////
 // REST PARAMETERS (Rest parameters, not REST parameters)
 ///////////////////////////////
-
+console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 function max(...numbers) {
   let result = -Infinity;
   
@@ -399,9 +399,9 @@ function max(...numbers) {
 console.log(max(4, 1, 9, -2, 5749));
 
 let numbers = [5, 7, 4, 9, 8008];
-console.log(max(numbers));
-console.log(max(...numbers));
-console.log(max(2 ,...numbers, 22222));
+console.log(max(numbers)); // breaks (-Infinity)
+console.log(max(...numbers)); // works (8008)
+console.log(max(2 ,...numbers, 22222)); // also works (22222)
 
 let wordz = ["sapphic", "lesbian"];
 console.log(["gay", ...wordz, "gayass", "homo"]);
