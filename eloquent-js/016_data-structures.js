@@ -460,3 +460,8 @@ let stringg = JSON.stringify({squirrel: false,
 console.log(stringg);
 console.log(JSON.parse(stringg).events);
 console.log(JSON.stringify(the));
+console.log(typeof stringg);
+console.log(typeof JSON.parse(stringg).events);
+console.log(typeof the);
+console.log(typeof JSON.stringify(the));
+console.log(the);
