@@ -27,6 +27,7 @@ function prepend(element, list) {
   }
 }
 
+console.log(prepend(6,list));
 console.log(prepend(57, list));
 
 // function nth(list, position) {

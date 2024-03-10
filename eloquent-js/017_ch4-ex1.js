@@ -27,6 +27,8 @@ console.log(sum([1, 2, 3, 4, 5, 6, 7]))
 
 console.log(sum(range(1, 10)));
 
+console.log(sum(range(4,12)));
+
 function range_v2(start, end, step) {
   let arr = [];
   // console.log(5 + (Math.floor(step) || 1));
